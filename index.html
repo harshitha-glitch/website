@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie Delight</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>aaaaaaaaaaaaaaa
+        <div class="container">
+            <h1>Foodie Delight</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-text">
+                <h2>Delicious Meals, Just for You!</h2>
+                <p>Explore our wide variety of dishes and enjoy a memorable dining experience.</p>
+                <a href="#menu" class="btn">View Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="featured-dishes">
+        <div class="container">
+            <h2>Featured Dishes</h2>
+            <div class="dishes-grid">
+                <div class="dish">
+                    <img src="pizzza.jpeg" alt="Spaghetti Carbonara">
+                    <h3>Spaghetti Carbonara</h3>
+                    <p>A classic Italian pasta dish with creamy sauce and crispy pancetta.</p>
+                </div>
+                <div class="dish">
+                    <img src="kfc.jpeg" alt="Margherita Pizza">
+                    <h3>Margherita Pizza</h3>
+                    <p>Simple and delicious with fresh mozzarella, basil, and tomato sauce.</p>
+                </div>
+                <div class="dish">
+                    <img src="Royal.jpg" alt="Caesar Salad">
+                    <h3>Caesar Salad</h3>
+                    <p>Crisp romaine lettuce with Caesar dressing, croutons, and parmesan cheese.</p>
+                </div>
+                <div class="dish">
+                    <img src="p1.jpeg" alt="Grilled Chicken">
+                    <h3>Grilled Chicken</h3>
+                    <p>Juicy grilled chicken served with a side of vegetables.</p>
+                </div>
+                <div class="dish">
+                    <img src="p2.jpeg" alt="Vegetarian Pasta">
+                    <h3>Vegetarian Pasta</h3>
+                    <p>A healthy mix of pasta with fresh vegetables.</p>
+                </div>
+                <div class="dish">
+                    <img src="p3.jpeg" alt="Sushi Platter">
+                    <h3>Sushi Platter</h3>
+                    <p>A delicious assortment of fresh sushi and sashimi.</p>
+                </div>
+                <div class="dish">
+                    <img src="p4.jpeg" alt="Sushi Platter">
+                    <h3>Sushi Platter</h3>
+                    <p>A delicious assortment of fresh sushi and sashimi.</p>
+                </div>
+                <div class="dish">
+                    <img src="p5.jpeg" alt="Sushi Platter">
+                    <h3>Sushi Platter</h3>
+                    <p>A delicious assortment of fresh sushi and sashimi.</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+    <section id="about" class="about-us">
+        <div class="container">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>At <span>Foodie Delight</span>, we're passionate about bringing you the most delicious and memorable dining experiences. Our team is dedicated to using only the freshest ingredients to create mouthwatering dishes that will leave you coming back for more. Whether you're here for a quick bite or a special celebration, we're committed to making every visit exceptional.</p>
+                    <p>Come join us and taste the difference! We believe in quality, creativity, and above all, making sure our customers leave with a smile on their face.</p>
+                    <a href="#contact" class="btn">Contact Us</a>
+                </div>
+                <div class="about-images">
+                    <img src="restu1.avif" alt="Our Restaurant" class="about-img">
+                    <img src="resturant.jpeg" alt="Our Restaurant" class="about-img">
+                    <img src="team.jpeg" alt="Our Team" class="about-img">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you! Please fill out the form below to get in touch with us.</p>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Foodie Delight. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script >
+        // Mobile Navigation Toggle
+document.querySelector('.mobile-nav-toggle').addEventListener('click', () => {
+    document.querySelector('nav ul').classList.toggle('open');
+});
+
+    </script>
+</body>
+</html>
